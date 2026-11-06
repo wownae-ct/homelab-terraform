@@ -1,0 +1,27 @@
+# Terraform state / local files
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+crash.*.log
+tfplan-*
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets
+terraform.tfvars
+*.auto.tfvars
+backend.hcl
+.terraformrc
+terraform.rc
+
+# Build artifacts
+modules/aws/lambda/*.zip
+
+# Editor / OS
+*.swp
+*.swo
+*~
+.DS_Store

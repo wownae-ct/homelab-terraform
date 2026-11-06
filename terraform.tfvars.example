@@ -1,0 +1,25 @@
+# Proxmox
+proxmox_api_url   = "https://YOUR_PROXMOX_IP:8006/"
+proxmox_node_name = "pve"
+
+# AWS
+aws_region     = "ap-northeast-2"
+admin_ssh_cidr = "203.0.113.10/32" # SSH를 허용할 내 공인 IP
+
+# Cloudflare
+cloudflare_account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+
+# SSH
+ssh_public_key = "ssh-ed25519 AAAA..."
+
+# Alert
+alert_email         = "your-email@example.com"
+discord_webhook_url = "https://discord.com/api/webhooks/CHANGE_ME"
+
+# ──────────────────────────────────────────
+# 아래 항목은 환경 변수 또는 별도 파일로 관리
+# ──────────────────────────────────────────
+# AWS credentials     -> aws configure (profile: default)
+# Cloudflare API      -> export CLOUDFLARE_API_TOKEN="..."
+# Proxmox API token   -> export PROXMOX_VE_API_TOKEN="user@pam!token=secret"
+# R2 Backend          -> backend.hcl (endpoints / access_key / secret_key)

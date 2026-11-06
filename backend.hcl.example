@@ -1,0 +1,4 @@
+# 복사해서 backend.hcl 로 만든 뒤 값을 채우세요. (backend.hcl 은 .gitignore 대상)
+endpoints  = { s3 = "https://<CLOUDFLARE_ACCOUNT_ID>.r2.cloudflarestorage.com" }
+access_key = "<R2_ACCESS_KEY_ID>"
+secret_key = "<R2_SECRET_ACCESS_KEY>"
