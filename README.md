@@ -60,4 +60,4 @@ critical은 바로 보내고 warning은 모아서 하루 한 번 요약해 보�
 
 - Terraform state는 Cloudflare R2(S3 호환)에 둡니다. R2에는 DynamoDB 같은 네이티브 state lock이 없습니다. 1인 운영이라 감수했고, 여러 명이 쓰려면 별도 락이 필요합니다.
 - Proxmox 프로바이더는 자체 서명 인증서 환경이라 `insecure = true`로 설정했습니다.
-- Kubernetes 설치와 설정(Ansible), GitOps 매니페스트는 이 저장소가 아니라 [infra-repo](https://github.com/wownae-ct/infra-repo)에 있습니다.
+- Kubernetes 설치와 서버 설정(Ansible)은 [infra-repo/ansible](https://github.com/wownae-ct/infra-repo/tree/master/ansible)에, GitOps 매니페스트는 [infra-repo/apps](https://github.com/wownae-ct/infra-repo/tree/master/apps)에 있습니다. 이 저장소에는 두 가지가 없습니다.
